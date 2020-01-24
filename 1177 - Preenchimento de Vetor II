@@ -1,0 +1,18 @@
+int main() {
+  int T;
+  int i;
+  int j=0;
+  int vetor[1000];
+  scanf("%d",&T);
+  if(T>=2 && T<=50) {
+    for(i=0; i<1000; i++) {
+      if(j>=T) {
+        j=0;
+      }
+      vetor[i]=j;
+      printf("N[%d] = %d\n",i,vetor[i]);
+      j++;
+    }
+  }
+    return 0;
+}
