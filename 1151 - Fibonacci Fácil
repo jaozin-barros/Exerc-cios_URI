@@ -1,0 +1,14 @@
+n = int(input())
+a = 0
+b = 1
+lista = [a,b]
+if n>0 and n<46:
+  x = 0
+  while x < n-2:
+    c = a + b
+    lista.append(c)
+    a = b
+    b = c
+    x = x+1
+  for inicio in lista:
+    print(inicio, end=" "%lista)
