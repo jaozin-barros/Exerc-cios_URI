@@ -1,0 +1,25 @@
+while True:
+  numeros = input().split()
+  m = int(numeros[0])
+  n = int(numeros[1]) 
+  lista = []
+  soma = 0 
+  if m<=0 or n<=0:
+    break
+  else:
+    if m<n:
+      while m<=n:
+        lista.append(m)
+        soma = soma + m
+        m = m + 1
+      for i in lista:
+        print(i,end=" ")
+      print("Sum=%d"%soma) 
+    else:
+      while n <= m:
+        lista.append(n)
+        soma = soma + n
+        n = n + 1
+      for i in lista:
+        print(i,end=" ")
+      print("Sum=%d"%soma)
