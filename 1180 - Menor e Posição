@@ -1,0 +1,11 @@
+n = int(input())
+lista = []
+n = len(lista)
+lista = list(map(int,input().split()))
+menor = lista[0]
+posicao = 0
+for x, e in enumerate(lista):
+  if e < menor:
+    menor = e
+    posicao = x
+print("Menor valor: {}\nPosicao: {}".format(menor,posicao))
