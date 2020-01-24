@@ -1,0 +1,9 @@
+n=int(input())
+while n>0:
+    a,b = map(int,input().split())
+    def mdc(A,B):
+        if B == 0:
+            return A
+        return mdc(B, A % B)
+    print(mdc(a,b))
+    n=n-1
