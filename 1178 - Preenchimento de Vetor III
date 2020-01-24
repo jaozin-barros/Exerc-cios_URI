@@ -2,8 +2,7 @@
 #include <math.h>
  
 int main() {
- 
-    double X;
+  double X;
   int i;
   double c;
   double vetor[100];
