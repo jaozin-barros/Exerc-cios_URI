@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    int i;
+    int k;
+    char palavra[52];
+    scanf("%d", &n);
+    for (i=0; i<n; i++) {
+        scanf("%s",palavra);
+        scanf("%d", &k);
+        int j=0;
+        while (palavra[j]!='\0') {
+            if(palavra[j]-k<65) {
+                printf("%c",(palavra[j]-k)+26);
+            }
+            else printf("%c", palavra[j]-k);
+            j++;
+        }
+        printf("\n");
+        palavra[0]='\0';
+    }
+    return 0;
+}
