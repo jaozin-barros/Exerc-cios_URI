@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+ 
+int main() {
+ 
+    double X;
+  int i;
+  double c;
+  double vetor[100];
+  scanf("%lf",&X);
+  for(i=0; i<100; i++) {
+    c=X/(pow(2,i));
+    printf("N[%d] = %.4lf\n" , i , c);
+  }
+    return 0;
+}
