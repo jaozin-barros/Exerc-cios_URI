@@ -1,0 +1,21 @@
+n = int(input())
+contador = 0
+while contador < n:
+  numero = input().split()
+  x = int(numero[0])
+  y = int(numero[1])
+  soma = 0
+  if x < y:
+    z = x + 1
+    while z<y:
+      if z%2!=0:
+        soma = soma + z
+      z = z + 1
+  else:
+    z = y + 1
+    while z<x:
+      if z%2!=0:
+        soma = soma + z
+      z = z + 1
+  print("%d"%soma)
+  contador = contador + 1
