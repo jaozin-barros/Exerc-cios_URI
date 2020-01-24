@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+  int n;
+  int i;
+  int c;
+  int vetor[10];
+  scanf("%d",&n);
+  if(n<=50) {
+    for(i=0; i<10; i++) {
+      c=pow(2,i);
+      printf("N[%d] = %d\n",i,(n*c));
+    }
+  }
+  return 0;
+}
