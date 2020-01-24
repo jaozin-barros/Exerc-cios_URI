@@ -1,0 +1,24 @@
+def repetir (W1,W2,R):
+  W = (W1+W2)/2
+  M = (W*(1+(R/30)))
+  if M>=1 and M<13:
+    return "Nao vai da nao"
+  elif M>=13 and M<14:
+    return "E 13"
+  elif M>=14 and M<40:
+    return "Bora, hora do show! BIIR!"
+  elif M>=40 and M<=60:
+    return "Ta saindo da jaula o mosntro!"
+  elif M>60:
+    return "AQUI E BODYBUILDER!!"
+while True:
+  W1,W2,R = input().split()
+  W1,W2,R = int(W1), int(W2), int(R)
+  if W1==0 or W2==0 or R==0:
+    print("Aqui nois constroi fibra rapaz! Nao e agua com musculo!")
+    break
+  else:
+    if W1>=1 and W1<=60 and W2>=1 and W2<=100 and R>=1 and R<=12:
+       repetir(W1,W2,R)
+  print(repetir(W1,W2,R))
+    
